@@ -1,0 +1,104 @@
+@import "../../../common/styles.module.less";
+
+.root {
+  margin-top: @rootMarginTop;
+  .containter {
+    display: flex;
+    width: @containerWidth;
+    margin-left: @containerMarginLeft;
+    margin-bottom: .2rem;
+    .box_title_img {
+      width: 100%;
+      height: 0.8rem;
+    }
+    .box_title {
+      color: white;
+      font-weight: bold;
+      font-size: 0.3rem;
+      position: absolute;
+      margin-top: 0.17rem;
+    }
+    .chart {
+      height: 6rem;
+    }
+    .layoutTop {
+      width: 100%;
+      .chartLeft {
+        width: 30%;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+      .chartMiddle {
+        width: 40%;
+        .map {
+          height: 8rem;
+        }
+        .number {
+          color: white;
+          font-weight: bold;
+          width: 100%;
+          .up {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.2rem;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+          }
+          .down {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            height: 1rem;
+            .text {
+              padding: 0.1rem 0.15rem;
+              font-size: 0.4rem;
+              border-radius: 0.05rem;
+              background-color: #0a54ea;
+            }
+            .dot {
+              font-size: 0.8rem;
+            }
+            .unit {
+              font-size: 0.2rem;
+            }
+          }
+        }
+      }
+      .chartRight {
+        width: 30%;
+        background: linear-gradient(to top, #05083d, #0f195b);
+        .userStatistics{
+          height: 2rem;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          .title {
+            color: #01d8ff;
+            font-size: 0.22rem;
+            font-weight: bold;
+          }
+          .description {
+            font-size: 0.15rem;
+            font-weight: bold;
+          }
+          .usericon {
+            width: 0.4rem;
+          }
+        }
+      }
+    }
+    .layoutBottom {
+      width: 100%;
+      .chartBottomLeft {
+        width: 31%;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+      .chartBottomRight {
+        width: 69%;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+    }
+
+  }
+}

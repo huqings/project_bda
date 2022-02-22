@@ -1,0 +1,133 @@
+@import "../../../common/styles.module.less";
+
+.root {
+  margin-top: @rootMarginTop;
+  .container {
+    width: @containerWidth;
+    margin-left: @containerMarginLeft;
+    .box_content {
+      display: flex;
+      flex-direction: column;
+      padding: 0.2rem;
+      .table_header {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        span {
+          color: white;
+          font-size: 0.2rem;
+          font-weight: bold;
+          line-height: 0.5rem;
+          opacity: 0.4;
+        }
+      }
+      .table_item {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 0.2rem;
+        margin-right: 0.2rem;
+        span {
+          color: white;
+          line-height: 0.45rem;
+        }
+      }
+    }
+    .box_title_img {
+      width: 65%;
+    }
+    .box_title {
+      color: white;
+      font-weight: bold;
+      font-size: 0.35rem;
+      position: absolute;
+      margin-top: 0.1rem;
+    }
+    .layoutTop {
+      display: flex;
+      .box_title_img {
+        width: 80%;
+      }
+      .box_title {
+        color: white;
+        font-weight: bold;
+        font-size: 0.3rem;
+        position: absolute;
+        margin-top: 0.08rem;
+      }
+      .chart {
+        height: 4.5rem;
+      }
+      .left {
+        width: 30%;
+        .widget {
+          background: linear-gradient(to top, #05083d, #0f195b);
+        }
+      }
+      .middle {
+        width: 40%;
+        position: relative;
+        .number {
+          color: white;
+          font-weight: bold;
+          width: 100%;
+          .up {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.2rem;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+          }
+          .down {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-left: 0.4rem;
+            margin-right: 0.4rem;
+            height: 1rem;
+            .text {
+              padding: 0.1rem 0.15rem;
+              font-size: 0.4rem;
+              border-radius: 0.05rem;
+              background-color: #0a54ea;
+            }
+            .dot {
+              font-size: 0.8rem;
+            }
+            .unit {
+              font-size: 0.2rem;
+            }
+          }
+        }
+        .map {
+          height: 10rem;
+          z-index: 999;
+        }
+      }
+      .right {
+        width: 30%;
+        .widget {
+          background: linear-gradient(to top, #05083d, #0f195b);
+        }
+      }
+    }
+    .layoutBottom {
+      width: 100%;
+      margin-top: 0.2rem;
+      .bottom_left_echart {
+        width: 100%;
+        background: linear-gradient(to top, #05083d, #0f195b);
+        .chart {
+          height: 4.5rem;
+        }
+      }
+      .bottom_right_echart {
+        width: 100%;
+        background: linear-gradient(to top, #05083d, #0f195b);
+        .chart {
+          height: 4.5rem;
+        }
+      }
+    }
+  }
+}

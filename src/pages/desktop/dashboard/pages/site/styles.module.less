@@ -1,0 +1,116 @@
+@import "../../../common/styles.module.less";
+
+.root {
+  margin-top: @rootMarginTop;
+  .container {
+    display: flex;
+    width: @containerWidth;
+    margin-left: @containerMarginLeft;
+    .box_title_img {
+      width: 100%;
+    }
+    .box_title {
+      color: white;
+      font-weight: bold;
+      font-size: 0.28rem;
+      position: absolute;
+      margin-top: 0.08rem;
+      display: flex;
+      align-items: center;
+    }
+    .selectAreaBox {
+      position: absolute;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0.2rem;
+      padding-left: 0.4rem;
+      width: calc(@containerWidth - 0.45rem);
+      Button {
+        color: #6be7ff;
+        font-size: 0.25rem;
+        font-weight: bold;
+      }
+      .area {
+        width: 5rem;
+      }
+      .number {
+        color: white;
+        width: 8rem;
+        font-weight: bold;
+        .up {
+          display: flex;
+          justify-content: space-between;
+          font-size: .2rem;
+        }
+        .down {
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-end;
+          .text {
+            padding: .1rem .2rem;
+            font-size: .4rem;
+            border-radius: .05rem;
+            background-color: #0A54EA;
+          }
+          .dot {
+            font-size: .8rem;
+          }
+          .unit {
+            font-size: .2rem;
+          }
+        }
+      }
+      .filterBox {
+        color: #01d8ff;
+        width: 5rem;
+        height: 3.5rem;
+        background-color: transparent;
+        border: 1px solid #00a8ff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        .item {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          font-weight: bold;
+          .dot {
+            height: 0.2rem;
+            width: 0.2rem;
+            border-radius: 50%;
+          }
+        }
+        .action {
+          display: flex;
+          justify-content: space-around;
+        }
+      }
+    }
+    .chartMap {
+      width: 100%;
+      .map {
+        height: 10rem;
+      }
+    }
+    .chart {
+      height: 4rem;
+    }
+    .chartLeft {
+      flex: 1;
+      background: linear-gradient(to top, #05083d, #0f195b);
+    }
+    .chartMiddleL {
+      flex: 1;
+      background: linear-gradient(to top, #05083d, #0f195b);
+    }
+    .chartMiddleR {
+      flex: 1;
+      background: linear-gradient(to top, #05083d, #0f195b);
+    }
+    .chartRight {
+      flex: 1;
+      background: linear-gradient(to top, #05083d, #0f195b);
+    }
+  }
+}

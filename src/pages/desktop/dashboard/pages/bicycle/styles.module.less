@@ -1,0 +1,132 @@
+@import "../../../common/styles.module.less"; 
+
+.root {
+  margin-top: @rootMarginTop;
+  .container {
+    width: @containerWidth;
+    margin-left: @containerMarginLeft;
+    .box_content {
+      display: flex;
+      flex-direction: column;
+      margin: 0.2rem;
+      .table_header {
+        display: flex;
+        justify-content: space-between;
+        span {
+          color: white;
+          font-size: .2rem;
+          font-weight: bold;
+          line-height: .4rem;
+        }
+      }
+      .table_item {
+        display: flex;
+        justify-content: space-between;
+        span {
+          color: #7BBCEE;
+          line-height: .3rem;
+        }
+      }
+    }
+    .layout_top {
+      display: flex;
+      .left_echart {
+        flex: 1;
+        background: linear-gradient(to top, #05083d, #0f195b);
+        padding-bottom: .2rem;
+        .box_title_img {
+          width: 80%;
+        }
+        .box_title {
+          color: white;
+          font-weight: bold;
+          font-size: 0.3rem;
+          position: absolute;
+          margin-top: 0.08rem;
+        }
+        .chart {
+          height: 3.5rem;
+          width: 100%;
+        }
+      }
+      .right_echart {
+        flex: 2;
+        .chart {
+          height: 7.5rem;
+          width: 100%;
+        }
+      }
+    }
+    .layout_middle {
+      display: flex;
+      margin-top: 0.2rem;
+      .chart {
+        height: 4rem;
+      }
+      .left_echart {
+        flex: 1;
+        background: linear-gradient(to top, #05083d, #0f195b);
+        .box_title_img {
+          width: 80%;
+        }
+        .box_title {
+          color: white;
+          font-weight: bold;
+          font-size: 0.3rem;
+          position: absolute;
+          margin-top: 0.08rem;
+        }
+      }
+      .right_echart {
+        flex: 2;
+        margin-right: .35rem;
+        margin-left: .2rem;
+        background: linear-gradient(to top, #05083d, #0f195b);
+        .box_title_img {
+          width: 40%;
+        }
+        .box_title {
+          color: white;
+          font-weight: bold;
+          font-size: 0.3rem;
+          position: absolute;
+          margin-top: 0.08rem;
+        }
+      }
+    }
+    .layout_bottom {
+      display: flex;
+      width: 100%;
+      margin-top: 0.2rem;
+      margin-bottom: .2rem;
+      .box_title_img {
+        width: 100%;
+      }
+      .box_title {
+        color: white;
+        font-weight: bold;
+        font-size: 0.3rem;
+        position: absolute;
+        margin-top: 0.08rem;
+        display: flex;
+        align-items: center;
+      }
+      .left_echart {
+        flex: 1;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+      .middle_f_echart {
+        flex: 1;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+      .middle_s_echart {
+        flex: 1;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+      .right_echart {
+        flex: 1;
+        background: linear-gradient(to top, #05083d, #0f195b);
+      }
+    }
+  }
+}
